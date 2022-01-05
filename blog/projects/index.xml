@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>projects on Pelinhx&#39;s Portfolio</title>
+    <link>https://pelinhx.github.io/blog/projects/</link>
+    <description>Recent content in projects on Pelinhx&#39;s Portfolio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <copyright>Copyright © 2022, pelinhx.</copyright>
+    <lastBuildDate>Sun, 05 Jan 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://pelinhx.github.io/blog/projects/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Future Projects will be here</title>
+      <link>https://pelinhx.github.io/projects/markdown-syntax/</link>
+      <pubDate>Sun, 05 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://pelinhx.github.io/projects/markdown-syntax/</guid>
+      <description>This will be a space for me to post any future work in a &amp;ldquo;blog&amp;rdquo; style form!</description>
+    </item>
+    
+  </channel>
+</rss>
