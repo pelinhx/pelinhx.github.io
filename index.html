@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <link rel="icon" href="/portfolio-website/favicon.ico">
+    <!-- Fix favicon path - relative path instead of absolute -->
+    <link rel="icon" href="./favicon.ico">
     <title>Pedro Magalhães - Multimedia Artist</title>
     
     <!-- Fonts -->
@@ -16,16 +17,32 @@
     
     <!-- Critical CSS (for faster initial load) -->
     <style>
+      :root {
+        --primary-color: #333;
+        --secondary-color: #666;
+        --text-color: #333;
+        --white: #fff;
+        --light-bg: #f8f8f8;
+        --gray: #eee;
+        --transition: all 0.3s ease;
+      }
+      
       body {
         margin: 0;
         padding: 0;
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        color: #333;
+        font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        color: var(--text-color);
+        line-height: 1.6;
       }
+      
       #app {
         min-height: 100vh;
         display: flex;
         flex-direction: column;
+      }
+      
+      * {
+        box-sizing: border-box;
       }
     </style>
     
@@ -45,10 +62,11 @@
         }
       }(window.location))
     </script>
-    <script type="module" crossorigin src="/portfolio-website/assets/index-CXJLWxTB.js"></script>
-    <link rel="stylesheet" crossorigin href="/portfolio-website/assets/index-Au_PGZ05.css">
+    <script type="module" crossorigin src="/portfolio-website/assets/index-9TeDTkUk.js"></script>
+    <link rel="stylesheet" crossorigin href="/portfolio-website/assets/style-BDpfRfhv.css">
   </head>
   <body>
     <div id="app"></div>
+    <!-- Fix the main.js path - use relative path -->
   </body>
 </html>
