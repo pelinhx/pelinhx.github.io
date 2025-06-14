@@ -1,100 +1,218 @@
+/* Global Variables */
 :root {
-  --primary-color: #000000;
-  --secondary-color: #333333;
-  --text-color: #000000;
-  --light-bg: #ffffff;
-  --dark-bg: #000000;
-  --white: #ffffff;
-  --gray: #f2f2f2;
+  --primary-color: #333;
+  --secondary-color: #666;
+  --text-color: #333;
+  --white: #fff;
+  --light-bg: #f8f8f8;
+  --gray: #eee;
   --transition: all 0.3s ease;
-  --font-primary: 'Helvetica Neue', Arial, sans-serif;
-  --container-width: 1200px;
-  --container-padding-x: 2rem;
 }
 
-*, *::before, *::after {
+/* CSS Reset */
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
 html {
-  font-size: 100%; /* Ensure 1rem = 16px */
   scroll-behavior: smooth;
 }
 
 body {
-  font-family: var(--font-primary);
-  line-height: 1.4;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  line-height: 1.6;
   color: var(--text-color);
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
   background-color: var(--white);
-  letter-spacing: 0.02em;
-  width: 100%;
   overflow-x: hidden;
 }
 
 #app {
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
-  width: 100%;
 }
 
+/* Container Layout */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 500;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+/* Links & Buttons */
 a {
   text-decoration: none;
   color: inherit;
   transition: var(--transition);
 }
 
-.container {
-  width: 100%;
-  max-width: var(--container-width);
-  margin: 0 auto;
-  padding-left: var(--container-padding-x);
-  padding-right: var(--container-padding-x);
+button {
+  background: none;
+  border: none;
+  font-family: inherit;
+  cursor: pointer;
+  transition: var(--transition);
 }
 
-main {
-  flex: 1;
-  margin-top: 120px; /* Account for fixed header */
-  width: 100%;
-  position: relative;
+.btn {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.8rem;
+  font-weight: 500;
+  border-radius: 4px;
+  transition: var(--transition);
 }
 
-@media (max-width: 576px) {
-  html {
-    font-size: 14px; /* Slightly smaller base font size */
+.primary-btn {
+  background-color: var(--primary-color);
+  color: var(--white);
+}
+
+.primary-btn:hover {
+  background-color: #444;
+}
+
+.secondary-btn {
+  background-color: transparent;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+
+.secondary-btn:hover {
+  background-color: var(--primary-color);
+  color: var(--white);
+}
+
+/* Section Styling */
+section {
+  padding: 5rem 0;
+}
+
+.section-title {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 3rem;
+  color: var(--primary-color);
+}
+
+/* Utility Classes */
+.highlight {
+  color: var(--primary-color);
+  font-weight: 500;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.mt-1 { margin-top: 1rem; }
+.mt-2 { margin-top: 2rem; }
+.mt-3 { margin-top: 3rem; }
+.mb-1 { margin-bottom: 1rem; }
+.mb-2 { margin-bottom: 2rem; }
+.mb-3 { margin-bottom: 3rem; }
+
+/* Flexbox & Grid Utilities */
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-center {
+  justify-content: center;
+  align-items: center;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.grid {
+  display: grid;
+}
+
+.grid-2 {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.grid-3 {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+/* Responsive Classes */
+@media screen and (max-width: 992px) {
+  h1 {
+    font-size: 2.2rem;
   }
   
-  .container {
-    padding-left: 1rem;
-    padding-right: 1rem;
+  h2 {
+    font-size: 1.8rem;
+  }
+  
+  .grid-3 {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
-/* Small devices (landscape phones) */
-@media (min-width: 577px) and (max-width: 767px) {
-  .container {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+  
+  h2 {
+    font-size: 1.6rem;
+  }
+  
+  .grid-2, .grid-3 {
+    grid-template-columns: 1fr;
+  }
+  
+  section {
+    padding: 4rem 0;
   }
 }
 
-/* Medium devices (tablets) */
-@media (min-width: 768px) and (max-width: 991px) {
+@media screen and (max-width: 480px) {
   .container {
-    padding-left: 2rem;
-    padding-right: 2rem;
+    width: 95%;
+    padding: 0 0.5rem;
   }
-}
-
-/* Large devices (desktops) */
-@media (min-width: 992px) {
-  .container {
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
+  
+  .btn {
+    padding: 0.7rem 1.5rem;
+    font-size: 0.75rem;
   }
 }

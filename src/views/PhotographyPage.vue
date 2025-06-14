@@ -1,5 +1,4 @@
 <template>
-  <main>
     <section class="portfolio-header">
       <div class="container">
         <h1 class="section-title">{{ t('photography') }}</h1>
@@ -44,7 +43,6 @@
         </div>
       </div>
     </section>
-  </main>
 </template>
 
 <script setup>
@@ -71,7 +69,7 @@ const photos = ref([
   { 
     id: 1, 
     link: "https://www.instagram.com/p/DChewovNQ4i/?img_index=1", 
-    thumbnail: "/images/photography/photo1.jpg",
+    thumbnail: import.meta.env.BASE_URL + "images/photography/photo1.jpg",
     title: "FIFA street 2, PSP.", 
     category: "portrait",
     categoryLabel: "Portrait"
@@ -79,7 +77,7 @@ const photos = ref([
   { 
     id: 2, 
     link: "https://www.instagram.com/p/DCm71DAN730/?img_index=1", 
-    thumbnail: "/images/photography/photo2.jpg",
+    thumbnail: import.meta.env.BASE_URL + "images/photography/photo2.jpg",
     title: "🤝", 
     category: "portrait",
     categoryLabel: "Portrait"
@@ -87,7 +85,7 @@ const photos = ref([
   { 
     id: 3, 
     link: "https://www.instagram.com/p/DCuappKNqBn/?img_index=1", 
-    thumbnail: "/images/photography/photo3.jpg",
+    thumbnail: import.meta.env.BASE_URL + "images/photography/photo3.jpg",
     title: "Bloke core.", 
     category: "portrait",
     categoryLabel: "Portrait"
@@ -95,7 +93,7 @@ const photos = ref([
   { 
     id: 4, 
     link: "https://www.instagram.com/p/DI4MT-HtRdP/?img_index=1", 
-    thumbnail: "/images/photography/photo4.jpg",
+    thumbnail: import.meta.env.BASE_URL + "images/photography/photo4.jpg",
     title: "Futebol no jardim.", 
     category: "portrait",
     categoryLabel: "Portrait"

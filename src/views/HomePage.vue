@@ -44,7 +44,7 @@
             </div>
           </div>
           <div class="hero-image">
-            <img src="@/assets/profile-photo.jpg" alt="Pedro Magalhães - Portrait">
+            <img :src="profileImagePath" alt="Pedro Magalhães - Portrait">
           </div>
         </div>
       </div>
@@ -82,10 +82,16 @@
 </template>
 
 <script setup>
-import { ref, onMounted, onUnmounted } from 'vue';
+import { ref, onMounted, onUnmounted, computed } from 'vue';
 import { userLanguage } from '../composables/userlanguage.js';
 
 const { t } = userLanguage();
+
+const profileImagePath = computed(() => {
+  return import.meta.env.PROD 
+    ? '/portfolio-website/assets/profile-photo.jpg' 
+    : '/src/assets/profile-photo.jpg';
+});
 
 // Portfolio menu state
 const showPortfolioMenu = ref(false);
