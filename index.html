@@ -3,13 +3,47 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <link rel="icon" href="/favicon.ico">
+    <link rel="icon" href="./favicon.ico">
     <title>Pedro Magalhães - Multimedia Artist</title>
+    <!-- Fixed path references with relative paths -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <script type="module" crossorigin src="/assets/index-CHwVxMRT.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-lwhtZUSz.css">
+    
+    <!-- GitHub Pages SPA redirect script -->
+    <script type="text/javascript">
+      // Single Page Apps for GitHub Pages
+      // MIT License
+      // https://github.com/rafgraph/spa-github-pages
+      (function(l) {
+        if (l.search[1] === '/' ) {
+          var decoded = l.search.slice(1).split('&').map(function(s) { 
+            return s.replace(/~and~/g, '&')
+          }).join('?');
+          window.history.replaceState(null, null,
+            l.pathname.slice(0, -1) + decoded + l.hash
+          );
+        }
+      }(window.location))
+    </script>
+    
+    <!-- Meta tags for better SEO -->
+    <meta name="description" content="Portfolio of Pedro Magalhães, a multimedia artist specializing in photography, video editing, and sound design.">
+    <meta name="keywords" content="multimedia, artist, photography, video editing, sound design, portfolio">
+    <meta name="author" content="Pedro Magalhães">
+    
+    <!-- Open Graph meta tags for social sharing -->
+    <meta property="og:title" content="Pedro Magalhães - Multimedia Artist">
+    <meta property="og:description" content="Portfolio of Pedro Magalhães, a multimedia artist specializing in photography, video editing, and sound design.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://pelinhx.github.io/portfolio-website/">
+    <meta property="og:image" content="/portfolio-website/assets/profile-photo-DAXvYQDy.jpg">
+    <script type="module" crossorigin src="/portfolio-website/assets/index-DI3audfN.js"></script>
+    <link rel="stylesheet" crossorigin href="/portfolio-website/assets/index-lwhtZUSz.css">
   </head>
   <body>
     <div id="app"></div>
+    
+    <!-- Preconnect to external resources -->
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
   </body>
 </html>
