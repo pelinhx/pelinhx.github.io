@@ -1,4 +1,3 @@
-<!-- filepath: /Users/pelinho/Desktop/Website Portfolio/portfolio_website/src/views/VideoEditingPage.vue -->
 <template>
       <section class="portfolio-header">
         <div class="container">
@@ -73,7 +72,7 @@
   { 
       id: 11,
       link: "https://youtu.be/5uM5FZ2n9R4", 
-      thumbnail: import.meta.env.BASE_URL + "images/video/project_thumbnail_20.jpg",
+      thumbnail: "images/video/project_thumbnail_20.jpg",
       title: "Short Film: LOVE", 
       description: "In LOVE we try to break down the relationship between the different types of love, as well as investigate if the parameters appear differently in people who are in a relationship versus people who are single.",
       category: "projects",
@@ -82,7 +81,7 @@
     { 
       id: 1,
       link: "https://youtu.be/5uM5FZ2n9R4", 
-      thumbnail: import.meta.env.BASE_URL + "images/video/project_thumbnail_6.jpg",
+      thumbnail: "images/video/project_thumbnail_6.jpg",
       title: "Short Film: Disconnected", 
       description: "A cinematic exploration of different viewpoints",
       category: "projects",
@@ -91,7 +90,7 @@
     { 
       id: 4,
       link: "https://www.youtube.com/playlist?list=PLGehBi5705V6fl_Tl3Z2o-tsi5ZyKzeMz", 
-      thumbnail: import.meta.env.BASE_URL + "images/video/vlog_thumbnail_4.jpg",
+      thumbnail: "images/video/vlog_thumbnail_4.jpg",
       title: "Vilnius Vlog", 
       description: "Vlog style documentation of a BIP mobility to Vilnius",
       category: "vlogs",
@@ -100,7 +99,7 @@
     { 
       id: 8,
       link: "https://youtu.be/KJhj731-hTE", 
-      thumbnail: import.meta.env.BASE_URL + "images/video/project_thumbnail_4.jpg",
+      thumbnail: "images/video/project_thumbnail_4.jpg",
       title: "Sensory Museum", 
       description: "Project about sensory overload",
       category: "projects",
@@ -109,7 +108,7 @@
     { 
       id: 9,
       link: "https://youtu.be/JW4VAU61jkk", 
-      thumbnail: import.meta.env.BASE_URL + "images/video/project_thumbnail_5.jpg",
+      thumbnail: "images/video/project_thumbnail_5.jpg",
       title: "Motion 2 Emotion", 
       description: "Motion 2 Emotion is a multimedia project focused on social interaction, designed to enhance people's understanding of body language and facial expressions.",
       category: "projects",
@@ -118,7 +117,7 @@
     { 
       id: 2,
       link: "https://youtu.be/JaeCGASsue0", 
-      thumbnail: import.meta.env.BASE_URL + "images/video/project_thumbnail_3.jpg",
+      thumbnail: "images/video/project_thumbnail_3.jpg",
       title: "Commercial: Coinbase Brand Video", 
       description: "A small advertisement for Coinbase",
       category: "projects",
@@ -127,7 +126,7 @@
     { 
       id: 6,
       link: "https://youtu.be/Mgcu2B-uwFA", 
-      thumbnail: import.meta.env.BASE_URL + "images/video/project_thumbnail_2.jpg",
+      thumbnail: "images/video/project_thumbnail_2.jpg",
       title: "Tubarão Alheira Trailer", 
       description: "A reimagination of a trailer for the horror saga featuring the mythical creature Tubarão Alheira",
       category: "projects",
@@ -136,7 +135,7 @@
     { 
       id: 5,
       link: "https://youtu.be/JNikfaJPYDM", 
-      thumbnail: import.meta.env.BASE_URL + "images/video/project_thumbnail_1.jpg",
+      thumbnail: "images/video/project_thumbnail_1.jpg",
       title: "The Ritual", 
       description: "A short animation done in blender",
       category: "projects",
@@ -145,7 +144,7 @@
     { 
       id: 11,
       link: "https://www.youtube.com/playlist?list=PLGehBi5705V70yFniXWxyiNesFyZ8hrbE", 
-      thumbnail: import.meta.env.BASE_URL + "images/video/project_thumbnail_10.jpg",
+      thumbnail: "images/video/project_thumbnail_10.jpg",
       title: "Paris Vlog 2022", 
       description: "A short trip to Paris captured in video",
       category: "vlogs",
@@ -154,7 +153,7 @@
     { 
       id: 3,
       link: "https://www.youtube.com/playlist?list=PLGehBi5705V5QTsmwJdxzzSbT-8_JuSXz", 
-      thumbnail: import.meta.env.BASE_URL + "images/video/vlog_thumbnail_3.jpg",
+      thumbnail: "images/video/vlog_thumbnail_3.jpg",
       title: "Vlog Buçaco", 
       description: "A series of videos while exploring Serra do Buçaco in Portugal.",
       category: "vlogs",
@@ -163,7 +162,7 @@
     { 
       id: 10,
       link: "https://www.youtube.com/playlist?list=PLGehBi5705V5PuFw6mpMnEqTQUD2yTuld", 
-      thumbnail: import.meta.env.BASE_URL + "images/video/vlog_thumbnail_2.jpg",
+      thumbnail: "images/video/vlog_thumbnail_2.jpg",
       title: "Paris Vlog 2", 
       description: "Capturing a vacation on Paris",
       category: "vlogs",

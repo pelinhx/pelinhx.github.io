@@ -1,4 +1,3 @@
-<!-- filepath: /Users/pelinho/Desktop/Website Portfolio/portfolio_website/src/views/ContactPage.vue -->
 <template>
     <main>
       <section class="contact">

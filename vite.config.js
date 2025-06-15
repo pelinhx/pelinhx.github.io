@@ -5,15 +5,11 @@ import vue from '@vitejs/plugin-vue'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [vue()],
-  base: process.env.NODE_ENV === 'production' ? '/portfolio-website/' : '/',
+  // For username.github.io, use '/' as the base
+  base: '/',
   build: {
     outDir: 'dist',
-    assetsInlineLimit: 0,
-    rollupOptions: {
-      output: {
-        manualChunks: undefined, // Ensure no code splitting for simpler assets
-      }
-    }
+    emptyOutDir: true
   },
   resolve: {
     alias: {

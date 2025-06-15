@@ -1,4 +1,3 @@
-<!-- filepath: /Users/pelinho/Desktop/Website Portfolio/portfolio_website/src/components/FooterSection.vue -->
 <template>
     <footer>
       <div class="container">

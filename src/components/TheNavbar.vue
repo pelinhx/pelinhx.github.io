@@ -1,4 +1,3 @@
-<!-- filepath: /Users/pelinho/Desktop/Website Portfolio/portfolio_website/src/components/TheNavbar.vue -->
 <template>
   <header :class="{ 'nav-scrolled': isScrolled, 'nav-hidden': isHidden }">
     <nav class="navbar">

@@ -1,6 +1,6 @@
 <!-- filepath: /Users/pelinho/Desktop/Website Portfolio/portfolio_website/src/views/HomePage.vue -->
 <template>
-  <main>
+
     <section class="hero">
       <div class="container">
         <div class="hero-content">
@@ -78,7 +78,6 @@
     
     <!-- Background overlay for closing menu -->
     <div class="portfolio-overlay" v-if="showPortfolioMenu" @click="closePortfolioMenu"></div>
-  </main>
 </template>
 
 <script setup>

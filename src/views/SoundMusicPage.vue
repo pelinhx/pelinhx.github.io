@@ -1,4 +1,3 @@
-<!-- filepath: /Users/pelinho/Desktop/Website Portfolio/portfolio_website/src/views/SoundMusicPage.vue -->
 <template>
       <section class="portfolio-header">
         <div class="container">
@@ -78,7 +77,7 @@
       id: 1,
       provider: 'instagram',
       link: "https://www.instagram.com/reel/DBMLud7IuT_/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==", 
-      thumbnail: import.meta.env.BASE_URL + "images/sound/synthesis_1.jpg",
+      thumbnail: "images/sound/synthesis_1.jpg",
       title: "Haunted Caving Experience on Minecraft", 
       description: "Creative sound synthesis exploration with modular system",
       category: "soundSynthesis",
@@ -88,7 +87,7 @@
       id: 2,
       provider: 'instagram',
       link: "https://www.instagram.com/reel/DBMLhHxo1SA/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==", 
-      thumbnail: import.meta.env.BASE_URL + "images/sound/synthesis_2.jpg",
+      thumbnail: "images/sound/synthesis_2.jpg",
       title: "Eeriescape", 
       description: "Experimental synthesis techniques for ambient textures",
       category: "soundSynthesis",
@@ -98,7 +97,7 @@
       id: 3,
       provider: 'instagram',
       link: "https://www.instagram.com/reel/DBKhw5toYtt/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==", 
-      thumbnail: import.meta.env.BASE_URL + "images/sound/synthesis_3.jpg",
+      thumbnail: "images/sound/synthesis_3.jpg",
       title: "Minecraft Haunted Maze", 
       description: "Exploring sonic possibilities through synthesis",
       category: "soundSynthesis",
@@ -110,7 +109,7 @@
       id: 4,
       provider: 'soundcloud',
       link: "https://soundcloud.com/pelinhx/horrorscape-4-demoo", 
-      thumbnail: import.meta.env.BASE_URL + "images/sound/horrorscape.jpg",
+      thumbnail: "images/sound/horrorscape.jpg",
       title: "Horrorscape", 
       description: "Atmospheric horror soundscape design for an immersive experience",
       category: "soundDesign",
@@ -120,7 +119,7 @@
       id: 5,
       provider: 'youtube',
       link: "https://youtu.be/oHklDEB9wDI", 
-      thumbnail: import.meta.env.BASE_URL + "images/sound/youtube_sound.jpg",
+      thumbnail: "images/sound/youtube_sound.jpg",
       title: "pov: you're 12 and this is your first time on minecraft", 
       description: "Experimental sound design for visual media",
       category: "soundDesign",
@@ -130,7 +129,7 @@
       id: 6,
       provider: 'soundcloud',
       link: "https://soundcloud.com/pelinhx/avistamento-tubarao-alheira", 
-      thumbnail: import.meta.env.BASE_URL + "images/sound/tubarao_alheira.jpg",
+      thumbnail: "images/sound/tubarao_alheira.jpg",
       title: "Avistamento Tubarão Alheira", 
       description: "Creative soundscape composition blending natural and synthetic elements",
       category: "soundDesign",
