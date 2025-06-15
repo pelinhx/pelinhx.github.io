@@ -1,5 +1,4 @@
 <template>
-    <main>
       <section class="contact">
         <div class="container">
           <h1 class="section-title">{{ t('contactMe') }}</h1>
@@ -38,7 +37,6 @@
           </div>
         </div>
       </section>
-    </main>
   </template>
   
   <script setup>
